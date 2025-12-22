@@ -16,8 +16,8 @@
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
-  <body data-bs-theme="dark" class="p-4">
-    <header>
+  <body data-bs-theme="dark">
+    <header class="p-4">
       <div class="container text-center">
         <h1 class="mb-3">Recetas del Mundo</h1>
         <p class="lead text-secondary">
@@ -27,7 +27,7 @@
     </header>
     <main>
       <div class="container">
-        <form class="row justify-content-center my-3">
+        <form class="row justify-content-center mb-4" id="formulario-busqueda">
           <div class="col-12 col-sm-10 col-md-8 col-lg-6">
             <div class="d-flex gap-2 w-100">
               <div class="position-relative flex-grow-1">
@@ -35,7 +35,7 @@
                   type="search"
                   name="searchForm"
                   class="form-control pe-5"
-                  placeholder="Busca por ingrediente"
+                  placeholder="Busca por ingrediente (en Ingles)..."
                 />
 
                 <i
@@ -51,119 +51,8 @@
 
       <section class="sectionRecetas my-4">
         <div class="container p-0 my-2">
-          <div class="row g-4 justify-content-center">
-            <div class="col-12 col-md-4">
-              <div class="card mx-auto">
-                <img
-                  src="assets/imagenes/imgRecetas/Pizza_Margherita.jpeg"
-                  class="card-img-top img-receta"
-                  alt="Pizza Margherita"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Pizza Margherita</h5>
-                  <p class="card-text">
-                    Ingredientes: Masa delgada de trigo, salsa de tomate,
-                    mozzarella fresca, hojas de albahaca y aceite de oliva. Es
-                    una de las pizzas más simples y representativas de Italia.
-                  </p>
-                  <a href="#" class="btn btn-primary">Ver receta</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-4">
-              <div class="card mx-auto">
-                <img
-                  src="assets/imagenes/imgRecetas/sushi.webp"
-                  class="card-img-top img-receta"
-                  alt="Sushi"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Sushi</h5>
-                  <p class="card-text">
-                    Ingredientes: Arroz avinagrado, alga nori, pescado fresco
-                    (como salmón o atún), pepino, palta y salsa de soja. Varía
-                    según el tipo (maki, nigiri, sashimi).
-                  </p>
-                  <a href="#" class="btn btn-primary">Ver receta</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-4">
-              <div class="card mx-auto">
-                <img
-                  src="assets/imagenes/imgRecetas/Tacos_al_Pastor.jpg"
-                  class="card-img-top img-receta"
-                  alt="Tacos al Pastor"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Tacos al Pastor</h5>
-                  <p class="card-text">
-                    Ingredientes: Tortillas de maíz, carne de cerdo marinada con
-                    achiote y especias, piña, cebolla, cilantro y salsa picante.
-                    Se cocinan en un trompo estilo shawarma.
-                  </p>
-                  <a href="#" class="btn btn-primary">Ver receta</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-4">
-              <div class="card mx-auto">
-                <img
-                  src="assets/imagenes/imgRecetas/Paella_Valenciana.webp"
-                  class="card-img-top img-receta"
-                  alt="Paella Valenciana"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Paella Valenciana</h5>
-                  <p class="card-text">
-                    Ingredientes: Arroz, pollo, conejo, judías verdes, garrofó,
-                    tomate, azafrán, pimentón y caldo. Uno de los platos más
-                    emblemáticos de España.
-                  </p>
-                  <a href="#" class="btn btn-primary">Ver receta</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-4">
-              <div class="card mx-auto">
-                <img
-                  src="assets/imagenes/imgRecetas/Asado_Argentino.jpg"
-                  class="card-img-top img-receta"
-                  alt="Asado Argentino"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Asado Argentino</h5>
-                  <p class="card-text">
-                    Ingredientes: Carne de res (costillar, vacío, chorizo), sal
-                    gruesa, brasas de leña o carbón. Se acompaña con
-                    chimichurri, pan y ensaladas simples.
-                  </p>
-                  <a href="#" class="btn btn-primary">Ver receta</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-4">
-              <div class="card mx-auto">
-                <img
-                  src="assets/imagenes/imgRecetas/Curry_de_Pollo.jpg"
-                  class="card-img-top img-receta"
-                  alt="Curry de Pollo"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Curry de Pollo</h5>
-                  <p class="card-text">
-                    Ingredientes: Pollo cocinado en una mezcla de especias
-                    (cúrcuma, comino, cilantro, garam masala), cebolla, tomate,
-                    ajo, jengibre y a veces crema o leche de coco.
-                  </p>
-                  <a href="#" class="btn btn-primary">Ver receta</a>
-                </div>
-              </div>
-            </div>
+          <div class="row g-4 justify-content-center" id="contenedor-recetas">
+            <!-- Resultados dinámicos -->
           </div>
         </div>
       </section>
@@ -181,6 +70,6 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <script src="assets/js/app.js" defer></script>
+    <script type="module" src="assets/js/app.js" defer></script>
   </body>
 </html>
