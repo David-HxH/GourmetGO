@@ -31,15 +31,13 @@ GourmetGO is a web application that allows users to search for restaurants and v
 6. Start the frontend development server:
 ```bashcd ../frontend && npm start
 ```
+7. Open your browser and navigate to `http://localhost:3000` to view the application.
 
 ## Technologies Used:
-- React
-- Node.js
-- Express
-- Yelp API
-- Axios
-- CSS
-- HTML
+- **Frontend**: React, Redux, Material-UI
+- **Backend**: Node.js, Express
+- **Database**: PostreSQL
+- **Authentication**: JWT (JSON Web Tokens)
 
 ## Contributing:
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
