@@ -54,7 +54,7 @@ For any questions or feedback, please contact us at contact@gourmetgo.com
 - [Axios](https://axios-http.com/)
 
 ## Demo:
-You can view a live demo of GourmetGO at [https://gourmetgo.com](https://gourmetgo.com).
+You can view a live demo of GourmetGO at [https://gourmetgo.com](https://david-hxh.github.io/GourmetGO/).
 
 ## GitHub Repository:
 The source code for GourmetGO is available on GitHub at [https://github.com/gourmetgo/gourmetgo](https://github.com/gourmetgo/gourmetgo).
