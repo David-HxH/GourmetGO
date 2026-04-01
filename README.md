@@ -1,7 +1,7 @@
 <h1 align="center">GourmetGO</h1>
 
 <p align="center">
-  <img src="./ramen.gif" width="400"/>
+  <img src="./ramen.gif" width="350"/>
 </p>
 
 ## Description:
